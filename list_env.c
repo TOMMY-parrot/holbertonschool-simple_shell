@@ -14,7 +14,7 @@ void custom_getenv(char **env)
 
 	while (env[s])
 	{
-		write(STDOUT_FILENO, env[s], _strlen(env[s]));
+		write(STDOUT_FILENO, env[s], custom_strlen(env[s]));
 		write(STDOUT_FILENO, "\n", 1);
 		s++;
 	}
