@@ -20,7 +20,7 @@ int main(int argc, char **argv, char **env)
 		if (inputline)
 		{
 			pathValue++;
-			commandtokens = tokenize(inputline);/** tokenizes or parse user input*/
+			commandtokens = custom_tokenize(inputline);/** tokenizes or parse user input*/
 			if (!commandtokens)
 				free(inputline);
 			if (!custom_strcmp(commandtokens[0], "env"))/**checks if user wrote env"*/
@@ -28,7 +28,7 @@ int main(int argc, char **argv, char **env)
 			else
 			{
 				is_path = custom_values_path(&commandtokens[0], env);/** tokenizes PATH*/
-				status = custom_fork_fun(commandtokens, argv, env, inputline, pathValue, is_path);
+				exitstatus = custom_fork_fun(commandtokens, argv, env, inputline, pathValue, is_path);
 					if (exitstatus == 200)
 					{
 						free(inputline);
