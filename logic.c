@@ -57,7 +57,7 @@ int shell_help(char **args)
 
 	printf("call 911\n");
 	(void)args;
-	for (k = 0; k < lsh_num_builtins(); k++)
+	for (k = 0; k < shell_num_builtins(); k++)
 	{
 		printf("  %s\n", builtin_str[k]);
 	}
@@ -109,7 +109,7 @@ int custom_fork_fun(char **arg, char **av, char **env, char *input, int num_proc
 
 	if (arg[0] == NULL)
 		return (1);
-	for (m = 0; m < lsh_num_builtins(); m++)
+	for (m = 0; m < shell_num_builtins(); m++)
 	{
 		if (custom_strcmp(arg[0], builtin_str[m]) == 0)
 			return (builtin_func[m](arg));
