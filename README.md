@@ -14,7 +14,9 @@ What is it for
 This consists of interpreting orders. It incorporates features such as process control, input/output redirection, law listing and reading, protection, communications, and a command language for writing batch programs or scripts. All Unix-type systems have at least one interpreter compatible with the Bourne shell. The Bourne shell program is found within the Unix file hierarchy at /bin/sh.
 
 PROJECT INFORMATIONS
+
 tasks
+
 Task 0. README, man_1_simple_shell, AUTHORS
 
 Task 1. Betty would be proud
@@ -32,6 +34,7 @@ Task 6. Simple shell 1.0
 Task 7. What happens when you type ls -l in the shell
 
 GENERAL REQUIRMENTS
+
 Allowed editors: vi, vim, emacs
 
 All your files will be compiled on Ubuntu 22.04 LTS
@@ -49,6 +52,7 @@ This shell should not have any memory leaks
 Unless specified otherwise, your program must have the exact same output as sh (/bin/sh) as well as the exact same error output.
 
 allowed functions used
+
 execve (man 2 execve)
 
 exit (man 3 exit)
@@ -101,16 +105,29 @@ $ ls -l
 total 56
 
 -rw-r--r-- 1 root root 3311 Aug 23 12:38 README.md
+
 -rw-r--r-- 1 root root   52 Aug 23 12:38 authors
+
 -rw-r--r-- 1 root root  599 Aug 23 12:38 get_path.c
+
 -rw-r--r-- 1 root root  350 Aug 23 12:38 getline_command.c
+
 -rw-r--r-- 1 root root  272 Aug 23 12:38 list_env.c
+
 -rw-r--r-- 1 root root 2382 Aug 23 12:38 logic.c
+
 -rw-r--r-- 1 root root 1386 Aug 23 12:38 man_simple_shell
+
 -rw-r--r-- 1 root root  955 Aug 23 12:38 my_shell.h
+
 -rw-r--r-- 1 root root  989 Aug 23 12:38 path_resolution.c
+
 -rw-r--r-- 1 root root 1315 Aug 23 12:38 shell.c
+
 -rw-r--r-- 1 root root 1517 Aug 23 12:38 shell_string_functions.c
+
 -rw-r--r-- 1 root root  658 Aug 23 12:38 tokenization.c
+
 AUTHORS
+
 YASSINE GUELLOUZ
